@@ -1,691 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portfolio of Soumyadeep Chatterjee — Full-Stack Software Engineer specializing in scalable web systems, React, Node.js, and Java Spring Boot."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Soumyadeep Chatterjee — Full-Stack Software Engineer</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- NAVIGATION -->
-    <nav class="nav" id="nav">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#" class="nav-brand">
-            <span class="nav-brand-text">SC</span>
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Portfolio of Soumyadeep Chatterjee — Software Engineer specializing in scalable web systems, React, Node.js, and iOS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet" />
+  <title>Soumyadeep Chatterjee — Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <!-- Desktop Nav -->
-          <ul class="nav-list" id="navList">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li>
-              <a href="#contact" class="nav-link nav-link-cta">Contact</a>
-            </li>
-          </ul>
+<body>
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="nav-brand-text">Soumyadeep C.</a>
 
-          <div class="nav-actions">
-            <!-- Theme Toggle Button -->
-            <button
-              class="theme-toggle"
-              id="themeToggle"
-              aria-label="Toggle Dark Mode"
-            >
-              <!-- Sun Icon (for Dark Mode) -->
-              <svg
-                class="icon-sun"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        <ul class="nav-list" id="navList">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li>
+            <a href="#contact" class="nav-link nav-link-cta">Contact</a>
+          </li>
+        </ul>
+
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <img src="images/ProfilePic.jpg" alt="Soumyadeep Chatterjee" class="hero-avatar" />
+        <div class="hero-info">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Relocating to India | Immediate Joiner
+          </div>
+
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-name">Soumyadeep Chatterjee</h1>
+          <p class="hero-title">Mobile & Web Engineer</p>
+          <p class="hero-description">
+            Software Engineer with 2+ years of experience merging enterprise
+            scale (Ex-Allianz) with US product standards (Apple Developer
+            Academy). Expert in
+            <strong>SwiftUI, Node.js, and React</strong>.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Engineering Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a href="https://drive.google.com/file/d/1EZ3D4RiS4lBGyJTTBDfC44ugnZKXQODv/view?usp=sharing" target="_blank"
+              class="btn btn-ghost">Download CV</a>
+          </div>
+
+          <div class="hero-connect">
+            <a href="https://www.linkedin.com/in/soumyadeep-chatterjee-dev/" target="_blank" class="connect-btn"
+              aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
               </svg>
-              <!-- Moon Icon (for Light Mode) -->
-              <svg
-                class="icon-moon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+              LinkedIn
+            </a>
+            <a href="https://github.com/Soumya98-dev" target="_blank" class="connect-btn" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path
-                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
-                ></path>
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
               </svg>
-            </button>
-
-            <button
-              class="nav-toggle"
-              id="navToggle"
-              aria-label="Toggle navigation"
-              aria-expanded="false"
-            >
-              <span class="nav-toggle-icon"></span>
-              <span class="nav-toggle-icon"></span>
-              <span class="nav-toggle-icon"></span>
-            </button>
+              GitHub
+            </a>
+            <a href="mailto:soumya.dc98@gmail.com" class="connect-btn" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Email
+            </a>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-grid">
-          <img
-            src="images/ProfilePic.png"
-            alt="Soumyadeep Chatterjee"
-            class="hero-avatar"
-          />
-          <div class="hero-info">
-            <p class="hero-greeting">Hi, I'm</p>
-            <h1 class="hero-name">Soumyadeep Chatterjee</h1>
-            <p class="hero-title">Full-Stack Software Engineer</p>
-            <p class="hero-description">
-              Engineer with 3+ years of experience architecting scalable
-              systems. Specialized in
-              <strong>React, Node.js, and Java Spring Boot</strong>. Proven
-              track record of optimizing high-availability platforms for 3K+
-              users and reducing load times by 40%.
+  <main id="main">
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>The Engineer</h3>
+            <p>
+              I merge enterprise-scale experience from
+              <strong>Allianz Technology</strong> with the user-centric design
+              standards of the <strong>Apple Developer Academy</strong>. My
+              focus is on shipping native apps and optimizing web systems for
+              99.9% uptime.
             </p>
-            <div class="hero-cta">
-              <a href="#projects" class="btn btn-primary"
-                >View Engineering Work</a
-              >
-              <a href="#contact" class="btn btn-secondary">Contact Me</a>
-              <a
-                href="https://drive.google.com/file/d/17toc1dF52kuFQRrU8sd3hV8HaNalkcID/view?usp=sharing"
-                target="_blank"
-                class="btn btn-ghost"
-                >Download Resume</a
-              >
+          </div>
+          <div class="card">
+            <h3>The Person</h3>
+            <p>
+              Beyond the IDE, I enjoy deep dives into social economics and
+              political discourse. I value mission-driven work and connect
+              best with teams that appreciate thoughtful, focused execution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+        <div class="experience-list">
+          <div class="experience-item">
+            <div class="experience-title-row">
+              <span class="experience-role">Software Developer</span>
+              <span class="experience-company">Wayne State University</span>
             </div>
-            <div class="hero-social">
-              <a
-                href="https://www.linkedin.com/in/soumyadeep-chatterjee-dev/"
-                target="_blank"
-                class="social-link"
-                aria-label="LinkedIn"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M20.45 20.45h-3.55v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9v5.6H9.41V9.5h3.41v1.49h.05c.48-.9 1.64-1.84 3.37-1.84 3.6 0 4.27 2.37 4.27 5.44v5.86zM5.34 8.01c-1.14 0-2.06-.93-2.06-2.07s.92-2.06 2.06-2.06 2.07.92 2.07 2.06-.93 2.07-2.07 2.07zM7.12 20.45H3.56V9.5h3.56v10.95z"
-                  />
-                </svg>
+            <span class="experience-location-date">Sep 2025 – Dec 2025 • Detroit, MI</span>
+            <ul class="experience-details">
+              <li>
+                Architected a real-time Student Tracker (React, Node.js) to
+                replace spreadsheets, cutting administrative data entry time
+                by 30%.
+              </li>
+              <li>
+                Deployed a secure public catalog with JWT authentication,
+                automating student self-service and reducing manual query
+                resolution by 15 hours/week.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-title-row">
+              <span class="experience-role">iOS Developer </span>
+              <span class="experience-company">Apple Developer Academy</span>
+            </div>
+            <span class="experience-location-date">Aug 2024 – Jun 2025 • Detroit, MI
+            </span>
+            <ul class="experience-details">
+              <li>
+                Shipped 4 native iOS apps to Test Flight within 10 months.
+              </li>
+              <li>
+                Presented 'GirlsTrip' safety architecture directly to Apple
+                engineering leadership.
+              </li>
+              <li>
+                Integrated CoreLocation and WidgetKit to drive user
+                engagement, achieving a 90% prototype retention rate.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-title-row">
+              <span class="experience-role">Software Developer </span>
+              <span class="experience-company">Qutrix</span>
+            </div>
+            <span class="experience-location-date">Dec 2022 – Mar 2023 • Bengaluru, India
+            </span>
+            <ul class="experience-details">
+              <li>
+                Slashed dashboard load times by 40% (5s → 3s) by implementing
+                route-based code splitting.
+              </li>
+              <li>
+                Eliminated staffing conflicts by building a real-time roster
+                synchronization engine (WebSockets).
+              </li>
+              <li>
+                Centralized workforce management into a unified Redux
+                dashboard, reducing redundancy by 25%.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-title-row">
+              <span class="experience-role">Software Engineer </span>
+              <span class="experience-company">Allianz Technology</span>
+            </div>
+            <span class="experience-location-date">May 2021 – Dec 2022 • Pune, India
+            </span>
+            <ul class="experience-details">
+              <li>
+                Optimized SQL queries for Global Policy System, sustaining
+                99.9% uptime for 3,000+ users.
+              </li>
+              <li>
+                Modernized legacy underwriting interfaces into modular React
+                components, accelerating page-load performance by 20%.
+              </li>
+              <li>
+                Earned "Nakshatra" Top Performer Award for operational
+                excellence.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Key Projects</h2>
+          <p class="section-subtitle">
+            Full-Stack & Native Mobile Architecture
+          </p>
+        </div>
+        <div class="grid-3">
+          <article class="project-card">
+            <div class="project-header header-blue"></div>
+            <div class="project-body">
+              <h3 class="project-title">MindMate - AI Platform</h3>
+              <p>
+                Conversational AI chatbot capable of context-aware
+                interactions. Secures user sessions via JWT authentication.
+              </p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Claude API</span>
+              </div>
+              <a href="https://github.com/Soumya98-dev/MindMate" target="_blank" style="
+                    margin-top: 1rem;
+                    display: inline-block;
+                    font-weight: 600;
+                  ">
+                View Code →
               </a>
-              <a
-                href="https://github.com/Soumya98-dev"
-                target="_blank"
-                class="social-link"
-                aria-label="GitHub"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M12 .5C5.73.5.98 5.25.98 11.52c0 4.86 3.16 8.98 7.55 10.43.55.1.75-.24.75-.53 0-.26-.01-1.12-.02-2.03-3.07.67-3.72-1.3-3.72-1.3-.5-1.25-1.22-1.58-1.22-1.58-.99-.67.07-.66.07-.66 1.1.08 1.67 1.12 1.67 1.12.98 1.67 2.57 1.19 3.2.91.1-.71.38-1.19.69-1.46-2.45-.28-5.03-1.22-5.03-5.44 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.41.11-2.93 0 0 .93-.3 3.05 1.13.89-.25 1.84-.38 2.79-.38.95 0 1.9.13 2.79.38 2.12-1.43 3.05-1.13 3.05-1.13.6 1.52.22 2.65.11 2.93.7.77 1.13 1.75 1.13 2.95 0 4.24-2.59 5.15-5.06 5.42.39.34.74 1.01.74 2.04 0 1.47-.01 2.65-.01 3.01 0 .29.2.64.76.53C19.86 20.5 23 16.38 23 11.52 23 5.25 18.27.5 12 .5z"
-                  />
-                </svg>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header header-indigo"></div>
+            <div class="project-body">
+              <h3 class="project-title">Travel Companion (iOS)</h3>
+              <p>
+                Secure SwiftUI app using MVVM architecture and Sign In with
+                Apple. Includes offline-first Safety Hub using CoreLocation.
+              </p>
+              <div class="tags">
+                <span class="tag">SwiftUI</span>
+                <span class="tag">CoreLocation</span>
+                <span class="tag">CoreML</span>
+              </div>
+              <a href="https://github.com/Soumya98-dev/GirlsTrip" target="_blank" style="
+                    margin-top: 1rem;
+                    display: inline-block;
+                    font-weight: 600;
+                  ">
+                View Code →
               </a>
-              <a
-                href="https://leetcode.com/u/deep803/"
-                target="_blank"
-                class="social-link"
-                aria-label="LeetCode"
-              >
-                <span class="badge mono">LC</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header header-slate"></div>
+            <div class="project-body">
+              <h3 class="project-title">Student Tracker</h3>
+              <p>
+                Real-time administration platform replacing legacy
+                spreadsheets. Cuts data entry time by 30% for 500+ active
+                records.
+              </p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <a href="https://github.com/Soumya98-dev/student-success-tracker-" target="_blank" style="
+                    margin-top: 1rem;
+                    display: inline-block;
+                    font-weight: 600;
+                  ">
+                View Code →
               </a>
-              <a
-                href="mailto:soumya.dc98@gmail.com"
-                class="social-link"
-                aria-label="Email"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                  />
-                </svg>
-              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+        <div class="grid-3">
+          <div class="skill-category">
+            <div class="skill-body">
+              <h3 class="skill-category-title">Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Swift (iOS)</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-body">
+              <h3 class="skill-category-title">Frameworks</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">SwiftUI</span>
+                <span class="skill-tag">UIKit</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">CoreLocation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-body">
+              <h3 class="skill-category-title">Tools & Metrics</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">LeetCode: 1600</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Git</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <main id="main">
-      <section id="about" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">
-              Engineering reliable systems through code, data, and thoughtful
-              architecture.
-            </p>
-          </div>
-          <div class="grid-2">
-            <div class="card">
-              <h3 class="card-title">💼 The Engineer</h3>
-              <div class="card-content">
-                <p>
-                  I don't just write code; I build systems that last. With
-                  experience at
-                  <strong>Allianz Technology</strong> and
-                  <strong>Wayne State</strong>, I focus on reliability,
-                  performance optimization, and scalable architecture. My
-                  approach is grounded in data structures and metric-driven
-                  improvements.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <h3 class="card-title">🧠 The Person</h3>
-              <div class="card-content">
-                <p>
-                  Beyond the IDE, I am an observer and a thinker. I enjoy deep
-                  dives into social economics, political discourse, and
-                  documentaries. I value mission-driven work and connect best
-                  with teams that appreciate thoughtful, focused execution over
-                  noise.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" class="section">
-        <div class="container">
-          <h2 class="experience-header">Professional Experience</h2>
-          <ul class="experience-list">
-            <!-- Wayne State -->
-            <li class="experience-item">
-              <div class="experience-title-row">
-                <div>
-                  <span class="experience-role">Software Developer</span>
-                  <span class="experience-company"
-                    >| Wayne State University</span
-                  >
-                </div>
-                <span class="experience-location-date"
-                  >Sep 2025 – Present Detroit, MI</span
-                >
-              </div>
-              <ul class="experience-details">
-                <li>
-                  Developing a
-                  <strong>unified Tracker (React/Node/Postgres)</strong> to
-                  replace scattered spreadsheets with centralized task
-                  management.
-                </li>
-                <li>
-                  Architecting a
-                  <strong>normalized PostgreSQL schema</strong> and SQL views to
-                  enable real-time tracking of applications and awards.
-                </li>
-                <li>
-                  Implementing a secure public catalog (Search/Filter + JWT) to
-                  automate student self-service and reduce administrative
-                  workload.
-                </li>
-              </ul>
-            </li>
-
-            <!-- Apple Academy -->
-            <li class="experience-item">
-              <div class="experience-title-row">
-                <div>
-                  <span class="experience-role">iOS Developer</span>
-                  <span class="experience-company"
-                    >| Apple Developer Academy</span
-                  >
-                </div>
-                <span class="experience-location-date"
-                  >Aug 2024 – Jun 2025 Detroit, MI</span
-                >
-              </div>
-              <ul class="experience-details">
-                <li>
-                  Prototyped 4 native iOS applications using
-                  <strong>SwiftUI and MVVM</strong>, including 'EmpowerHer'
-                  (Safety) utilizing <strong>CoreLocation</strong>.
-                </li>
-                <li>
-                  Engineered 'EncouragementKitty', implementing
-                  <strong>WidgetKit</strong> and
-                  <strong>UserNotifications</strong> to drive retention.
-                </li>
-              </ul>
-            </li>
-
-            <!-- Qutrix -->
-            <li class="experience-item">
-              <div class="experience-title-row">
-                <div>
-                  <span class="experience-role">Software Developer</span>
-                  <span class="experience-company">| Qutrix</span>
-                </div>
-                <span class="experience-location-date"
-                  >Dec 2022 – Mar 2023 Bengaluru, India</span
-                >
-              </div>
-              <ul class="experience-details">
-                <li>
-                  Engineered a dynamic workforce dashboard using
-                  <strong>React and Redux</strong>, eliminating staffing
-                  redundancies.
-                </li>
-                <li>
-                  Implemented real-time roster synchronization using
-                  <strong>WebSockets</strong> to prevent scheduling conflicts.
-                </li>
-                <li>
-                  Decreased critical dashboard load time by
-                  <strong>40% (5s → 3s)</strong> via route-based code splitting.
-                </li>
-              </ul>
-            </li>
-
-            <!-- Allianz -->
-            <li class="experience-item">
-              <div class="experience-title-row">
-                <div>
-                  <span class="experience-role">Software Engineer</span>
-                  <span class="experience-company">| Allianz Technology</span>
-                </div>
-                <span class="experience-location-date"
-                  >May 2021 – Dec 2022 Pune, India</span
-                >
-              </div>
-              <ul class="experience-details">
-                <li>
-                  Maintained <strong>99.9% uptime</strong> for a Global Policy
-                  System used by <strong>3K+ users</strong> by optimizing SQL
-                  queries.
-                </li>
-                <li>
-                  Accelerated page-load performance by <strong>20%</strong> by
-                  decoupling legacy underwriting views into modular React
-                  components.
-                </li>
-                <li>
-                  Recognized as
-                  <strong>Top Performer (Nakshatra Award)</strong> for
-                  streamlining global release pipelines across 15+ countries.
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Key Projects</h2>
-            <p class="section-subtitle">
-              Selected works demonstrating full-stack architecture and product
-              engineering.
-            </p>
-          </div>
-          <div class="grid-3">
-            <!-- SaaS Admin Portal (Renamed from Next Dashboard) -->
-            <article class="project-card">
-              <img
-                src="images/dashboard_home.png"
-                alt="SaaS Admin Portal"
-                class="project-image"
-              />
-              <div class="project-body">
-                <h3 class="project-title">SaaS Admin Portal</h3>
-                <p class="project-description">
-                  Performance-first admin platform using
-                  <strong>Next.js App Router</strong>, leveraging
-                  <strong>Server Actions</strong> for mutation and
-                  <strong>Streaming</strong> for data fetching.
-                </p>
-                <div class="tags mb-2">
-                  <span class="tag">Next.js 14</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">NextAuth</span>
-                </div>
-                <a
-                  href="https://github.com/Soumya98-dev/NextJSDashboard"
-                  target="_blank"
-                  class="project-link"
-                  >View Code →</a
-                >
-              </div>
-            </article>
-
-            <!-- MindMate -->
-            <article class="project-card">
-              <!-- Replaced image with a generic AI one or keep existing if relevant -->
-              <div
-                class="project-image"
-                style="
-                  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <span style="font-size: 3rem">🧠</span>
-              </div>
-              <div class="project-body">
-                <h3 class="project-title">MindMate - AI Health Platform</h3>
-                <p class="project-description">
-                  Conversational AI chatbot with context-aware interactions.
-                  Secures user sessions via <strong>JWT</strong>. Architected a
-                  RESTful backend with SQLite persistence.
-                </p>
-                <div class="tags mb-2">
-                  <span class="tag">React</span>
-                  <span class="tag">Flask</span>
-                  <span class="tag">Claude API</span>
-                  <span class="tag">JWT</span>
-                </div>
-                <a
-                  href="https://github.com/Soumya98-dev/MindMate"
-                  target="_blank"
-                  class="project-link"
-                  >View Code →</a
-                >
-              </div>
-            </article>
-
-            <!-- EmpowerHer -->
-            <article class="project-card">
-              <div
-                class="project-image"
-                style="
-                  background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <span style="font-size: 3rem">🛡️</span>
-              </div>
-              <div class="project-body">
-                <h3 class="project-title">EmpowerHer (iOS)</h3>
-                <p class="project-description">
-                  Personal safety application utilizing
-                  <strong>CoreLocation</strong> for real-time tracking and
-                  emergency alerts. Built with MVVM architecture.
-                </p>
-                <div class="tags mb-2">
-                  <span class="tag">SwiftUI</span>
-                  <span class="tag">CoreLocation</span>
-                  <span class="tag">MVVM</span>
-                </div>
-                <a
-                  href="https://github.com/Soumya98-dev/EmpowerHer"
-                  target="_blank"
-                  class="project-link"
-                  >View Code →</a
-                >
-              </div>
-            </article>
-
-            <!-- Hybrid CNN (Keep if you want to show ML depth, otherwise remove) -->
-            <article class="project-card">
-              <img
-                src="images/hybrid_cnn_img.png"
-                alt="Hybrid CNN-ViT"
-                class="project-image"
-              />
-              <div class="project-body">
-                <h3 class="project-title">Hybrid CNN-ViT Recognition</h3>
-                <p class="project-description">
-                  Advanced sign language recognition combining Vision
-                  Transformers with CNNs for improved accuracy.
-                </p>
-                <div class="tags mb-2">
-                  <span class="tag">PyTorch</span>
-                  <span class="tag">Computer Vision</span>
-                </div>
-                <a
-                  href="https://github.com/Soumya98-dev/Hybrid-CNN-ViT-Model-for-Sign-Language-Recognition"
-                  target="_blank"
-                  class="project-link"
-                  >View Code →</a
-                >
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Technical Skills</h2>
-          </div>
-          <div class="grid-3">
-            <div class="skill-category">
-              <h3 class="skill-category-title"><span>💻</span> Languages</h3>
-              <ul class="skill-list">
-                <li class="skill-item"><strong>Java</strong> (Spring Boot)</li>
-                <li class="skill-item"><strong>JavaScript</strong> (ES6+)</li>
-                <li class="skill-item"><strong>TypeScript</strong></li>
-                <li class="skill-item"><strong>Python</strong></li>
-                <li class="skill-item"><strong>Swift</strong></li>
-                <li class="skill-item"><strong>SQL</strong></li>
-              </ul>
-            </div>
-
-            <div
-              class="skill-category"
-              style="border-left-color: var(--accent-secondary)"
-            >
-              <h3 class="skill-category-title"><span>🚀</span> Frameworks</h3>
-              <ul class="skill-list">
-                <li class="skill-item">
-                  <strong>Frontend:</strong> React, Next.js, Redux, Tailwind,
-                  SwiftUI
-                </li>
-                <li class="skill-item">
-                  <strong>Backend:</strong> Node.js, Express, Spring Boot
-                </li>
-                <li class="skill-item">
-                  <strong>Data:</strong> PostgreSQL, MongoDB, MySQL
-                </li>
-              </ul>
-            </div>
-
-            <div class="skill-category" style="border-left-color: #ffb86b">
-              <h3 class="skill-category-title"><span>🏆</span> Metrics</h3>
-              <ul class="skill-list">
-                <li class="skill-item">
-                  <strong>LeetCode:</strong> Rating 1600 (Top 20%)
-                </li>
-                <li class="skill-item">
-                  <strong>Performance:</strong> 40% Load Time Reduction
-                </li>
-                <li class="skill-item">
-                  <strong>Reliability:</strong> 99.9% Uptime Maintenance
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">
-              Open to opportunities in Frontend and Full-Stack Engineering.
-            </p>
-          </div>
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/xlddknng"
-            method="POST"
-          >
-            <div class="form-group">
-              <label for="name" class="form-label">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="form-input"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-input"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                class="form-textarea"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%">
-              Send Message
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+    <section id="contact" class="section">
       <div class="container">
-        <div class="footer-content">
-          <p>© <span id="year"></span> Soumyadeep Chatterjee.</p>
-          <div class="footer-links">
-            <a
-              href="https://www.linkedin.com/in/soumyadeep-chatterjee-dev/"
-              target="_blank"
-              class="footer-link"
-              >LinkedIn</a
-            >
-            <a
-              href="https://github.com/Soumya98-dev"
-              target="_blank"
-              class="footer-link"
-              >GitHub</a
-            >
-            <a href="mailto:soumya.dc98@gmail.com" class="footer-link">Email</a>
-          </div>
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Relocating to India. Immediate Joiner.
+          </p>
         </div>
+        <form class="contact-form" action="https://formspree.io/f/xlddknng" method="POST">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%">
+            Send Message
+          </button>
+        </form>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script>
-      // 1. Theme Logic
-      const themeToggle = document.getElementById("themeToggle");
-      const root = document.documentElement;
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Soumyadeep Chatterjee.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/soumyadeep-chatterjee-dev/" target="_blank"
+          class="footer-link">LinkedIn</a>
+        <a href="https://github.com/Soumya98-dev" target="_blank" class="footer-link">GitHub</a>
+        <a href="mailto:soumya.dc98@gmail.com" class="footer-link">Email</a>
+      </div>
+    </div>
+  </footer>
 
-      // Check for saved preference OR system preference
-      const savedTheme = localStorage.getItem("theme");
-      const systemPrefersLight = window.matchMedia(
-        "(prefers-color-scheme: light)"
-      );
+  <script>
+    // 1. Theme Logic
+    const themeToggle = document.getElementById("themeToggle");
+    const root = document.documentElement;
+    const savedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia(
+      "(prefers-color-scheme: light)"
+    );
 
-      function setTheme(theme) {
-        root.setAttribute("data-theme", theme);
-        localStorage.setItem("theme", theme);
-      }
+    function setTheme(theme) {
+      root.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+    }
 
-      // Initial Load
-      if (savedTheme) {
-        setTheme(savedTheme);
-      } else if (systemPrefersLight.matches) {
-        setTheme("light");
-      }
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else if (systemPrefersLight.matches) {
+      setTheme("light");
+    }
 
-      // Toggle Click
-      themeToggle.addEventListener("click", () => {
-        const currentTheme = root.getAttribute("data-theme");
-        setTheme(currentTheme === "light" ? "dark" : "light");
-      });
+    themeToggle.addEventListener("click", () => {
+      const currentTheme = root.getAttribute("data-theme");
+      setTheme(currentTheme === "light" ? "dark" : "light");
+    });
 
-      // Listen for System Changes (Auto-switch if no manual override exists)
-      systemPrefersLight.addEventListener("change", (e) => {
-        if (!localStorage.getItem("theme")) {
-          setTheme(e.matches ? "light" : "dark");
-        }
-      });
+    // 2. Navigation
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const navList = document.getElementById("navList");
+    const navToggle = document.getElementById("navToggle");
 
-      // 2. Navigation Logic
-      document.getElementById("year").textContent = new Date().getFullYear();
-      const nav = document.getElementById("nav");
-      const navToggle = document.getElementById("navToggle");
-      const navList = document.getElementById("navList");
+    navToggle.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+  </script>
+</body>
 
-      navToggle.addEventListener("click", () => {
-        navList.classList.toggle("active");
-        navToggle.classList.toggle("active");
-      });
-
-      window.addEventListener("scroll", () => {
-        nav.classList.toggle("scrolled", window.scrollY > 50);
-      });
-    </script>
-  </body>
-  <!-- <div class="liquid-background">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-    <div class="noise-overlay"></div>
-  </div> -->
 </html>
